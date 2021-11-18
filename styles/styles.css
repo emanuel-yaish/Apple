@@ -1,0 +1,139 @@
+/* Fonts */
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/assets/fonts/sf-pro-text_regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/assets/fonts/sf-pro-text_semibold.woff2") format("woff2");
+  font-style: medium;
+  font-weight: 600;
+}
+
+/* Colors */
+:root {
+  --nav-color: rgba(0, 0, 0, 0.8);
+  --background-color: #fbedf9;
+  --red-background: #e34140;
+  --black-header: #1d1d1f;
+  --white-header: #f5f5f7;
+  --link-color: #06c;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elements */
+html {
+  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+}
+
+body {
+  font-family: "SF Pro Text";
+}
+
+header,
+section {
+  padding: 44px 0;
+}
+
+/* General */
+.black {
+  color: var(--black-header);
+}
+
+.white {
+  color: var(--white-header);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 5.6rem;
+  letter-spacing: 0;
+}
+
+/*  Navigation */
+
+.main-nav {
+  background-color: var(--nav-color);
+  text-align: center;
+  font-size: 1.2rem;
+  height: 44px;
+  line-height: 44px;
+  z-index: 1;
+  position: fixed;
+  width: 100vw;
+}
+
+/* unvisited link */
+.main-nav a:link {
+  color: #f5f5f7;
+  text-decoration: none;
+}
+
+/* visited link */
+.main-nav a:visited {
+  color: #f5f5f7;
+}
+
+/* mouse over link */
+.main-.main-nav a:hover {
+  color: #f5f5f7;
+}
+
+/* selected link */
+.main-nav a:active {
+  color: #f5f5f7;
+}
+
+/* Header */
+.gifts-header {
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.shop-now {
+  background-color: var(--red-background);
+  color: white;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 1.4rem;
+}
+
+.gifts-title {
+  padding: 44px 0;
+}
+
+.shop-gifts {
+  font-size: 2.1rem;
+}
+
+.shop-gifts a {
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.shop-gifts-text {
+  color: var(--link-color);
+}
+
+.shop-gifts-text:hover {
+  text-decoration: underline;
+}
+
+.gifts-images-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gifts-images-container figure {
+  margin: 2.4rem;
+}
