@@ -18,8 +18,9 @@
   --nav-color: rgba(0, 0, 0, 0.8);
   --background-color: #fbedf9;
   --red-background: #e34140;
-  --black-header: #1d1d1f;
-  --white-header: #f5f5f7;
+  --black: #1d1d1f;
+  --white: #f5f5f7;
+  --pink: #fec2eb;
   --link-color: #06c;
 }
 
@@ -46,17 +47,63 @@ section {
 
 /* General */
 .black {
-  color: var(--black-header);
+  color: var(--black);
 }
 
 .white {
-  color: var(--white-header);
+  color: var(--white);
 }
 
+.pink {
+  color: var(--pink);
+}
+
+.small-margin {
+  margin: 0.5rem 0;
+}
+
+.medium-margin {
+  margin: 1rem 0;
+}
+
+.big-margin {
+  margin: 1.5rem 0;
+}
+
+/* Headers */
 .section-title {
   text-align: center;
   font-size: 5.6rem;
   letter-spacing: 0;
+  font-weight: 600;
+  letter-spacing: -0.2rem;
+}
+
+.section-secondary-title {
+  font-size: 2.8rem;
+  font-family: 400;
+}
+
+/* Links */
+/* unvisited link */
+.main-link:link {
+  color: var(--link-color);
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+/* visited link */
+.main-link:visited {
+  color: var(--link-color);
+}
+
+/* mouse over link */
+.main-link:hover {
+  text-decoration: underline;
+}
+
+/* selected link */
+.main-link:active {
 }
 
 /*  Navigation */
@@ -112,21 +159,8 @@ section {
   padding: 44px 0;
 }
 
-.shop-gifts {
-  font-size: 2.1rem;
-}
-
-.shop-gifts a {
-  font-size: 2.1rem;
-  text-decoration: none;
-}
-
-.shop-gifts-text {
-  color: var(--link-color);
-}
-
-.shop-gifts-text:hover {
-  text-decoration: underline;
+.apple-gift {
+  margin-bottom: 1.5rem;
 }
 
 .gifts-images-container {
@@ -136,4 +170,21 @@ section {
 
 .gifts-images-container figure {
   margin: 2.4rem;
+}
+
+/* iphone Pro section */
+.iphone-pro-section {
+  text-align: center;
+  height: 70vh;
+  background-image: url("../assets/img/hero_iphone_13pro.jpg");
+  background-position: center 40%;
+  margin: 1vh;
+}
+
+/* iphone section */
+.iphone-section {
+  text-align: center;
+  height: 70vh;
+  background-image: url("../assets/img/hero_iphone_13.jpg");
+  background-position: center 40%;
 }
