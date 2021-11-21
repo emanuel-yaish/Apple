@@ -22,6 +22,7 @@
   --white: #f5f5f7;
   --pink: #fec2eb;
   --gray: #f5f5f7;
+  --orange: #bf4800;
   --link-color: #06c;
   --gray-text: #6e6e73;
   --footer-link-color: #424245;
@@ -175,11 +176,6 @@ hr {
   color: var(--white);
 }
 
-/* selected link */
-.main-nav a:active {
-  /* color: #f5f5f7; */
-}
-
 .main-nav span {
   display: inline-block;
   padding: 0 0.2rem;
@@ -207,11 +203,20 @@ hr {
 
 .shop-now {
   background-color: var(--red-background);
-  color: white;
+  color: var(--white);
   height: 44px;
   text-align: center;
   line-height: 44px;
   font-size: 1.4rem;
+}
+
+.gift-header-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.gift-header-link:hover {
+  text-decoration: underline;
 }
 
 .gifts-title {
@@ -265,7 +270,7 @@ hr {
 }
 
 .product {
-  height: 55vh;
+  height: 60vh;
   background-position: center center;
 }
 
@@ -312,6 +317,12 @@ hr {
   background-image: url("../assets/img/tile_watch.jpg");
 }
 
+.watch .watch-new {
+  color: var(--orange);
+  font-size: 1.2rem;
+  margin-top: 3.1rem;
+}
+
 .homepod-mini {
   grid-area: homepod-mini;
   background-image: url("../assets/img/tile_homepod_mini.jpg");
@@ -325,13 +336,36 @@ hr {
   font-size: 1rem;
 }
 
+.arcade .arcade-try-it:after {
+  content: "\2197";
+  border-right: none;
+  border-bottom: none;
+  transform: rotate(0deg);
+  top: 0%;
+}
+
 .card {
   grid-area: card;
   background-image: url("../assets/img/tile__cauwwcyyn9hy.jpg");
 }
 .tv {
+  padding: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--white);
   grid-area: tv;
   background-image: url("../assets/img/promo_dickinson.jpg");
+}
+
+.tv .tv-play-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+}
+
+.tv-new-season {
+  font-size: 1.7rem;
 }
 
 /* footer */
@@ -448,10 +482,6 @@ hr {
 /* mouse over link */
 .homepage-footer a:hover {
   text-decoration: underline;
-}
-
-/* selected link */
-.homepage-footer a:active {
 }
 
 .homepage-footer .way-to-shop:link {
