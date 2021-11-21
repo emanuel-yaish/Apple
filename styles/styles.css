@@ -81,6 +81,10 @@ hr {
   margin: 1.5rem 0;
 }
 
+.left-margin {
+  margin-left: 5rem;
+}
+
 /* Headers */
 .section-title {
   text-align: center;
@@ -92,7 +96,7 @@ hr {
 
 .section-secondary-title {
   font-size: 2.8rem;
-  font-family: 400;
+  font-weight: 400;
 }
 
 /* Links */
@@ -119,17 +123,11 @@ hr {
   color: var(--link-color);
 }
 
-.main-link::after {
-  right: -16px;
-  transform: rotate(-45deg);
-}
-
 .main-link {
   position: relative;
 }
 
-a:after {
-  color: black;
+.main-link:after {
   border-right: 0.2rem solid var(--link-color);
   border-bottom: 0.2rem solid var(--link-color);
   content: "";
@@ -139,8 +137,8 @@ a:after {
   top: 37%;
 }
 
-a:after {
-  right: -16px;
+.main-link:after {
+  right: -1.6rem;
   transform: rotate(-45deg);
 }
 
@@ -252,6 +250,88 @@ a:after {
   height: 70vh;
   background-image: url("../assets/img/hero_iphone_13.jpg");
   background-position: center 40%;
+}
+
+/* products section */
+.products-section {
+  padding: 1vh;
+  text-align: center;
+  display: grid;
+  gap: 1vh;
+  grid-template-areas:
+    "macbook-pro watch"
+    "homepod-mini arcade"
+    "card tv";
+}
+
+.product {
+  height: 55vh;
+  background-position: center center;
+}
+
+.product-title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 5.3rem;
+  letter-spacing: -0.2rem;
+}
+
+.product-secondary-title {
+  font-size: 2.1rem;
+  font-weight: 400;
+  letter-spacing: -0.1rem;
+}
+
+.product-logo-title {
+  margin: 5.3rem 0 1rem;
+}
+
+.product .main-link {
+  font-size: 1.7rem;
+}
+
+.product .main-link:after {
+  border-right: 0.15rem solid var(--link-color);
+  border-bottom: 0.15rem solid var(--link-color);
+  width: 0.4rem;
+  height: 0.4rem;
+  top: 40%;
+}
+
+.product .main-link:after {
+  right: -1.2rem;
+}
+
+.macbook-pro {
+  grid-area: macbook-pro;
+  background-image: url("../assets/img/tile_macbookpro__cx0ur0qg9biq_large.jpg");
+}
+
+.watch {
+  grid-area: watch;
+  background-image: url("../assets/img/tile_watch.jpg");
+}
+
+.homepod-mini {
+  grid-area: homepod-mini;
+  background-image: url("../assets/img/tile_homepod_mini.jpg");
+}
+.arcade {
+  grid-area: arcade;
+  background-image: url("../assets/img/tile_lego.jpg");
+}
+
+.arcade-sup a:hover {
+  font-size: 1rem;
+}
+
+.card {
+  grid-area: card;
+  background-image: url("../assets/img/tile__cauwwcyyn9hy.jpg");
+}
+.tv {
+  grid-area: tv;
+  background-image: url("../assets/img/promo_dickinson.jpg");
 }
 
 /* footer */
